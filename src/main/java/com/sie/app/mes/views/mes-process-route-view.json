@@ -1,0 +1,100 @@
+{
+  "views": {
+    "process_route_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "编码",
+            "name": "code"
+          },
+          {
+            "displayName": "关联产品",
+            "name": "product"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "process_route",
+      "name": "工艺路线-表单",
+      "type": "form"
+    },
+    "process_route_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "编码",
+            "name": "code",
+            "sortable": true,
+            "width": "80px"
+          },
+          {
+            "displayName": "关联产品",
+            "name": "product"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "process_route",
+      "name": "工艺路线-表格",
+      "type": "grid"
+    },
+    "process_route_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "编码",
+            "name": "code"
+          },
+          {
+            "displayName": "关联产品",
+            "name": "product"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "process_route",
+      "name": "工艺路线-搜索",
+      "type": "search"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "menus": {
+    "mes_root_menu": {
+      "name": "mes_root_menu",
+      "display_name": "生产制造管理系统",
+      "active": true,
+      "sequence": 1
+    },
+
+    "order_menu": {
+      "name": "order_menu",
+      "display_name": "订单管理",
+      "model": "order",
+      "view": "order_grid,order_search,order_form",
+      "sequence": 1,
+      "active": true,
+      "parent_ids": {
+        "@ref": "mes_root_menu"
+      }
+    },
+    "product_menu": {
+      "name": "product_menu",
+      "display_name": "产品管理",
+      "model": "product",
+      "view": "product_grid,product_search,product_form",
+      "sequence": 2,
+      "active": true,
+      "parent_ids": {
+        "@ref": "mes_root_menu"
+      }
+    },
+
+
+    "material_menu": {
+      "name": "material_menu",
+      "display_name": "物料管理",
+      "model": "material",
+      "view": "material_grid,material_search,material_form",
+      "sequence": 3,
+      "active": true,
+      "parent_ids": {
+        "@ref": "mes_root_menu"
+      }
+    },
+
+
+    "process_menu": {
+          "name": "process_menu",
+          "display_name": "工序管理",
+          "model": "process",
+          "view": "process_grid,process_search,process_form",
+          "sequence": 4,
+          "active": true,
+          "parent_ids": {
+            "@ref": "mes_root_menu"
+          }
+    },
+    "process_route_menu": {
+      "name": "process_route_menu",
+      "display_name": "工艺路线管理",
+      "model": "process_route",
+      "view": "process_route_grid,process_route_search,process_route_form",
+      "sequence": 5,
+      "active": true,
+      "parent_ids": {
+        "@ref": "mes_root_menu"
+      }
+    },
+    "supplier_menu": {
+      "name": "supplier_menu",
+      "display_name": "供应商管理",
+      "model": "supplier",
+      "view": "supplier_grid,supplier_search,supplier_form",
+      "sequence": 6,
+      "active": true,
+      "parent_ids": {
+        "@ref": "mes_root_menu"
+      }
+    },
+    "barcode_rule_menu": {
+      "name": "barcode_rule_menu",
+      "display_name": "编码规则",
+      "model": "barcode_rule",
+      "view": "barcode_rule_grid,barcode_rule_search,barcode_rule_form",
+      "sequence": 7,
+      "active": true,
+      "parent_ids": {
+        "@ref": "mes_root_menu"
+      }
+    }
+  }
+}

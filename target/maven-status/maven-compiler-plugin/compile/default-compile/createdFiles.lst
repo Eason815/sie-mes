@@ -1,0 +1,11 @@
+com\sie\app\mes\model\BarcodeRule.class
+com\sie\app\mes\model\Product.class
+com\sie\app\mes\model\ProductBom.class
+com\sie\app\mes\model\ProcessBom.class
+com\sie\app\mes\model\Supplier.class
+com\sie\app\mes\model\ProcessRoute.class
+com\sie\app\mes\model\Material.class
+com\sie\app\mes\model\BarcodeDetail.class
+com\sie\app\mes\model\Order.class
+com\sie\app\mes\model\Process.class
+com\sie\app\mes\util\CodeGenerator.class

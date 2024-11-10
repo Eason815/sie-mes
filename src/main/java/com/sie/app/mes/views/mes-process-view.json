@@ -1,0 +1,150 @@
+{
+  "views": {
+    "process_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "编码",
+            "name": "code"
+          },
+          {
+            "displayName": "processRoute",
+            "name": "processRoute"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "process",
+      "name": "工序-搜索",
+      "type": "search"
+    },
+    "process_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "编码",
+            "name": "code",
+            "sortable": true,
+            "width": "80px"
+          },
+          {
+            "displayName": "processRoute",
+            "name": "processRoute"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "process",
+      "name": "工序-表格",
+      "type": "grid"
+    },
+    "process_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "编码",
+            "name": "code"
+          },
+          {
+            "displayName": "processRoute",
+            "name": "processRoute"
+          }
+        ],
+        "tabs": [
+          {
+            "body": {
+              "buttons": [
+                {
+                  "action": "updateEr",
+                  "auth": "update",
+                  "name": "编辑"
+                }
+              ],
+              "columns": [
+                {
+                  "displayName": "数量",
+                  "name": "amount"
+                },
+                {
+                  "displayName": "物料",
+                  "name": "material"
+                }
+              ],
+              "edit": {
+                "columns": [
+                  {
+                    "displayName": "数量",
+                    "name": "amount"
+                  },
+                  {
+                    "displayName": "物料",
+                    "name": "material"
+                  }
+                ],
+                "type": "form"
+              },
+              "field": "processBomList",
+              "type": "grid,form"
+            },
+            "header": "工序BOM",
+            "tbar": [
+              {
+                "action": "createEr",
+                "auth": "create",
+                "name": "创建"
+              },
+              {
+                "action": "deleteEr",
+                "auth": "delete",
+                "name": "删除"
+              }
+            ]
+          }
+        ],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "process",
+      "name": "工序-表单",
+      "type": "form"
+    }
+  }
+}

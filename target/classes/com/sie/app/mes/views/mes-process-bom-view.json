@@ -1,0 +1,100 @@
+{
+  "views": {
+    "process_bom_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "数量",
+            "name": "amount"
+          },
+          {
+            "displayName": "工序",
+            "name": "process"
+          },
+          {
+            "displayName": "物料",
+            "name": "material"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "process_bom",
+      "name": "工序BOM-表单",
+      "type": "form"
+    },
+    "process_bom_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "数量",
+            "name": "amount"
+          },
+          {
+            "displayName": "工序",
+            "name": "process",
+            "sortable": true,
+            "width": "80px"
+          },
+          {
+            "displayName": "物料",
+            "name": "material"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "process_bom",
+      "name": "工序BOM-表格",
+      "type": "grid"
+    },
+    "process_bom_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "数量",
+            "name": "amount"
+          },
+          {
+            "displayName": "工序",
+            "name": "process"
+          },
+          {
+            "displayName": "物料",
+            "name": "material"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "process_bom",
+      "name": "工序BOM-搜索",
+      "type": "search"
+    }
+  }
+}

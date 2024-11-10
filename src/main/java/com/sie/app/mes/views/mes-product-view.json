@@ -1,0 +1,148 @@
+{
+  "views": {
+    "product_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "规格",
+            "name": "form"
+          },
+          {
+            "displayName": "产品状态",
+            "name": "status"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "product",
+      "name": "产品-表格",
+      "type": "grid"
+    },
+    "product_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "规格",
+            "name": "form"
+          },
+          {
+            "displayName": "产品状态",
+            "name": "status"
+          }
+        ],
+        "tabs": [
+          {
+            "body": {
+              "buttons": [
+                {
+                  "action": "updateEr",
+                  "auth": "update",
+                  "name": "编辑"
+                }
+              ],
+              "columns": [
+                {
+                  "displayName": "数量",
+                  "name": "amount"
+                },
+                {
+                  "displayName": "物料",
+                  "name": "material"
+                }
+              ],
+              "edit": {
+                "columns": [
+                  {
+                    "displayName": "数量",
+                    "name": "amount"
+                  },
+                  {
+                    "displayName": "物料",
+                    "name": "material"
+                  }
+                ],
+                "type": "form"
+              },
+              "field": "productBomList",
+              "type": "grid,form"
+            },
+            "header": "产品BOM",
+            "tbar": [
+              {
+                "action": "createEr",
+                "auth": "create",
+                "name": "创建"
+              },
+              {
+                "action": "deleteEr",
+                "auth": "delete",
+                "name": "删除"
+              }
+            ]
+          }
+        ],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "product",
+      "name": "产品-表单",
+      "type": "form"
+    },
+    "product_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "规格",
+            "name": "form"
+          },
+          {
+            "displayName": "产品状态",
+            "name": "status"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "product",
+      "name": "产品-搜索",
+      "type": "search"
+    }
+  }
+}

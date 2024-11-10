@@ -1,0 +1,160 @@
+{
+  "views": {
+    "material_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "编码规则",
+            "name": "code",
+            "sortable": true,
+            "width": "80px"
+          },
+          {
+            "displayName": "类型",
+            "name": "type"
+          },
+          {
+            "displayName": "单位",
+            "name": "unit"
+          },
+          {
+            "displayName": "描述",
+            "name": "description"
+          },
+          {
+            "displayName": "库存量",
+            "name": "stockQuantity"
+          },
+          {
+            "displayName": "单价",
+            "name": "price"
+          },
+          {
+            "displayName": "供应类",
+            "name": "supplier"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "material",
+      "name": "物料-表格",
+      "type": "grid"
+    },
+    "material_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "编码规则",
+            "name": "code"
+          },
+          {
+            "displayName": "类型",
+            "name": "type"
+          },
+          {
+            "displayName": "单位",
+            "name": "unit"
+          },
+          {
+            "displayName": "描述",
+            "name": "description"
+          },
+          {
+            "displayName": "库存量",
+            "name": "stockQuantity"
+          },
+          {
+            "displayName": "单价",
+            "name": "price"
+          },
+          {
+            "displayName": "供应类",
+            "name": "supplier"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "material",
+      "name": "物料-表单",
+      "type": "form"
+    },
+    "material_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "名称",
+            "name": "name"
+          },
+          {
+            "displayName": "编码规则",
+            "name": "code"
+          },
+          {
+            "displayName": "类型",
+            "name": "type"
+          },
+          {
+            "displayName": "单位",
+            "name": "unit"
+          },
+          {
+            "displayName": "描述",
+            "name": "description"
+          },
+          {
+            "displayName": "库存量",
+            "name": "stockQuantity"
+          },
+          {
+            "displayName": "单价",
+            "name": "price"
+          },
+          {
+            "displayName": "供应类",
+            "name": "supplier"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "material",
+      "name": "物料-搜索",
+      "type": "search"
+    }
+  }
+}

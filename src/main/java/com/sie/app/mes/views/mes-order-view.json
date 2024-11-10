@@ -1,0 +1,113 @@
+{
+  "views": {
+    "order_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "数量",
+            "name": "quantity"
+          },
+          {
+            "displayName": "订单状态",
+            "name": "status",
+            "sortable": true,
+            "width": "80px"
+          },
+          {
+            "displayName": "预计完成时间",
+            "name": "dueDate"
+          },
+          {
+            "displayName": "产品",
+            "name": "product"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "order",
+      "name": "生产订单-表格",
+      "type": "grid"
+    },
+    "order_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "数量",
+            "name": "quantity"
+          },
+          {
+            "displayName": "订单状态",
+            "name": "status"
+          },
+          {
+            "displayName": "预计完成时间",
+            "name": "dueDate",
+            "widget": "datetimerange"
+          },
+          {
+            "displayName": "产品",
+            "name": "product"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "order",
+      "name": "生产订单-搜索",
+      "type": "search"
+    },
+    "order_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "数量",
+            "name": "quantity"
+          },
+          {
+            "displayName": "订单状态",
+            "name": "status"
+          },
+          {
+            "displayName": "预计完成时间",
+            "name": "dueDate"
+          },
+          {
+            "displayName": "产品",
+            "name": "product"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "order",
+      "name": "生产订单-表单",
+      "type": "form"
+    }
+  }
+}

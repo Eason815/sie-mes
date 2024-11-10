@@ -1,0 +1,31 @@
+{
+  "name": "mes",
+  "displayName": "生产制造MES-APP",
+  "author": "gh",
+  "company": "sie",
+  "category": "MES",
+  "product": "MES",
+  "description": "生产制造MES-APP",
+  "summary": "MES",
+  "type": "SDK",
+  "tag": "master",
+  "version": "0.0.1",
+  "resolved": "com.sie.app.mes",
+  "dependencies": [],
+  "application": true,
+  "icon": null,
+  "license": "LGPL 3.0",
+  "view": [
+    "mes-material-view.json",
+    "mes-order-view.json",
+    "mes-process-bom-view.json",
+    "mes-process-route-view.json",
+    "mes-process-view.json",
+    "mes-product-bom-view.json",
+    "mes-product-view.json",
+    "mes-supplier-view.json",
+    "mes-barcode-rule-view.json"
+  ],
+  "data": [
+  ]
+}
