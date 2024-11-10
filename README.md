@@ -1,6 +1,6 @@
 # 实训过程总结
 
-![图片](https://github.com/Eason815/pic_bed/blob/master/img/siip/1.png?raw=true)
+![图片](pic.png)
 
 - 产品管理页面，有产品名称、规格等信息，包含校验；
 
@@ -161,3 +161,8 @@ private ExampleClass exampleClass;
 `name`是要下拉栏填入的数据库列名，是当前/写在的类 数据库中的一列
 
 `referencedProperty`是下方类的属性，选择要显示的类的属性
+
+
+## 参考资料
+
+链接：[IIDP 谷神工业数字平台](http://iidp.chinasie.com:9999/iidpdoc/)
